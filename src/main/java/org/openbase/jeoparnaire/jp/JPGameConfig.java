@@ -21,9 +21,10 @@ package org.openbase.jeoparnaire.jp;
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
-
 import java.io.File;
+import org.openbase.jps.core.JPService;
 import org.openbase.jps.exception.JPNotAvailableException;
+import org.openbase.jps.exception.JPServiceException;
 import org.openbase.jps.preset.AbstractJPFile;
 import org.openbase.jps.tools.FileHandler;
 
@@ -39,8 +40,17 @@ public class JPGameConfig extends AbstractJPFile {
     }
 
     @Override
+    public File getParentDirectory() throws JPServiceException {
+        try {
+            return JPService.getProperty(JPGameResources.class).getValue();
+        } catch (JPServiceException ex) {
+            return null;
+        }
+    }
+
+    @Override
     protected File getPropertyDefaultValue() throws JPNotAvailableException {
-        return new File("JeoparnaireConfig.xml");
+        return new File("JeoparnaireGameConfig.xml");
     }
 
     @Override
