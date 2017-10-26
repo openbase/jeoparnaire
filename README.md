@@ -5,14 +5,14 @@ Perfect for birthday and christmas parties, anniversary celebrations or just for
 
 ## Features 
 
-* questions are individually configurable via config file.
-  * plain text questions (native java textfield)
-  * images (native java image viewer)
-  * videos (vlc)
-  * include any external application
-* java based display server
-* java based voting client
-  * up to 50 clients can be connection for voting.
+* Questions individually configurable via config file
+  * Plain text questions
+  * Images
+  * Videos (e.g. vlc used as player)
+  * Include any external application
+* Java based display server
+* Java based voting client
+  * Up to 50 clients can be connected for voting
 
 ## Preview
 
@@ -37,8 +37,8 @@ and the global raning of all voter.
 ## Voting hints
 
 * Parallel voting, first vote first win
-  * The first 10 correct votes get points
-* Negative points for wrong votes.
+  * The first 10 correct votes earn points
+* Negative points (25% of quest points) for wrong votes
 * Vote controlling
   * Click the buttons to vote (not recommended)
-  * The W-A-S-D keys are mapped to A-B-C-D votes.
+  * The W-A-S-D keys are mapped to A-B-C-D votes
