@@ -1,0 +1,8 @@
+- Herzlich Willkommen
+- Jeopardy etwas abgewandelt.
+- ähnlich wie "Wer wird Millionär"
+- Voting von allen parallel via Clients
+- Steuerung: 1-4, Maus (nicht zu empfehlen), QWAS
+- Wenn unsicher nicht voten, es gibt Minuspunkte bei falschen Antworten.
+- Videos und Bilder können unmittelbar etwas mit der Frage zutun haben. 
+

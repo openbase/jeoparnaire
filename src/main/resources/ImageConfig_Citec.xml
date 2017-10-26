@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<GameData> 
+	<Category name="Citec">
+		<Quest points="200" question="Welcher Roboter ist im CITEC nicht zu finden?">
+			<Execution type="post" command="showimage /home/divine/JeopardyResources/PR2.jpg"/>
+			<Execution type="final" command="showimage /home/divine/JeopardyResources/Robots.png"/>
+			<Answer text="PR2"/>
+			<Answer text="Kuka"/>
+			<Answer text="Aibo"/>
+			<Answer text="PatrolBot"/>
+		</Quest>
+		<Quest points="400" question="In welchem Jahr wurde das CITEC gegründet?">
+			<Execution type="final" command="showimage /home/divine/JeopardyResources/CitecStart.jpg"/>
+			<Answer text="2007"/>
+			<Answer text="2006"/>
+			<Answer text="2005"/>
+			<Answer text="2008"/>
+		</Quest>
+		<Quest points="600" question="Wie oft war das Citec durch Team Tobi bereits beim RoboCup vertreten?">
+			<Execution type="pre" command="showimage /home/divine/JeopardyResources/RoboCub_pre.jpg"/>
+			<Execution type="final" command="showimage /home/divine/JeopardyResources/RoboCup.png"/>
+			<Answer text="5"/>
+			<Answer text="4"/>
+			<Answer text="3"/>
+			<Answer text="2"/>
+		</Quest>
+		<Quest points="800" question="Wie weit ist der CITEC-Eingang vom Mensa-Eingang entfernt?">
+			<Execution type="pre" command="showimage /home/divine/JeopardyResources/Campus.png"/>
+			<Answer text="1,110 km"/>
+			<Answer text="0,800 km"/>
+			<Answer text="1,510 km"/>
+			<Answer text="2,110 km"/>
+		</Quest>
+		<Quest points="1000" question="Wie viele Glasscheiben sind am CITEC verbaut?">
+			<Execution type="pre" command="showimage /home/divine/JeopardyResources/citec.png"/>
+			<Answer text="ca. 2500"/>
+			<Answer text="ca. 500"/>
+			<Answer text="ca. 1000"/>
+			<Answer text="ca. 3000"/>
+		</Quest>
+	</Category>
+	<Category name="Bielefeld">
+		<Quest points="200" question="Welche beiden kulinarischen Spezialitäten aus Bielefeld existieren wirklich?">
+			<Execution type="final" command="showimage /home/divine/JeopardyResources/BielefelderLuft.jpg"/>
+			<Answer text="Bielefelder Luft und Bielefelder Wasser"/>
+			<Answer text="Bielefelder Wasser und Bielefelder Erde"/>
+			<Answer text="Bielefelder Erde und Bielefelder Feuer"/>
+			<Answer text="Bielefelder Feuer und Bielefelder Luft"/>
+		</Quest>
+		<Quest points="400" question="Von wem wird Bielefeld in diesem Kurzfilm bedroht?">
+			<Execution type="pre" command="vlc --fullscreen --play-and-exit /home/divine/JeopardyResources/DBielefeldV.mp4"/>
+			<Execution type="post" command="showimage /home/divine/JeopardyResources/Sie.png"/>
+			<Answer text="S.I.E.kom"/>
+			<Answer text="E.R.kom"/>
+			<Answer text="S.I.E.bi"/>
+			<Answer text="E.R.de"/>
+		</Quest>
+		<Quest points="600" question="Wie viele Studenten waren im SS 2013 in der Universität Bielefeld eingeschrieben?">
+			<Execution  type="pre" command="showimage /home/divine/JeopardyResources/Tafelbild.jpg"/>
+			<Answer text="19.227"/>
+			<Answer text="1.969"/>
+			<Answer text="31.582"/>
+			<Answer text="13.549"/>
+		</Quest>
+		<Quest points="800" question="Wann hat Dr. Oetker das erste mal sein Backpulver in kleinen Tüten verkauft?">
+			<Execution type="pre" command="showimage /home/divine/JeopardyResources/Dr_Oetker_Logo.jpg"/>
+			<Execution type="post" command="showimage /home/divine/JeopardyResources/DrOetker.png"/>
+			<Answer text="1891"/>
+			<Answer text="1738"/>
+			<Answer text="1903"/>
+			<Answer text="1965"/>
+		</Quest>
+		<Quest points="1000" question="In welchem Jahrhundert ist die Sparrenburg entstanden?">
+			<Execution type="pre" command="showimage /home/divine/JeopardyResources/Sparrenburg2.jpg"/>
+			<Answer text="13"/>
+			<Answer text="14"/>
+			<Answer text="15"/>
+			<Answer text="16"/>
+		</Quest>
+	</Category>
+	<Category name="Mensa">
+		<Quest points="200" question="Was passiert mit den Gerichten in der Auslage?">
+			<Execution type="pre" command="showimage /home/divine/JeopardyResources/Glaskasten.png"/>
+			<Answer text="Das Essen wird vernichtet."/>
+			<Answer text="Es handelt sich um Lebensmittelattrapen aus Kunststoff."/>
+			<Answer text="Dieses wird alle 30 min gewechselt, damit es noch verzehrt werden kann."/>
+			<Answer text="Sie werden für den Eintopf am nächsten Tag verwendet."/>
+		</Quest>
+		<Quest points="400" question="Welche ist keine Küchenphilosophie der Unimensa?">
+			<Execution type="post" command="showimage /home/divine/JeopardyResources/Salz.jpg"/>
+			<Answer text="Die Gerichte werden extra wenig gesalzt, um eine individuelle Nachsalzung zu ermöglichen."/>
+			<Answer text="Die Rezepturen werden im Hause selbst entwickelt. So können die Küchenchefs auf die Vorlieben der Kunden besser eingehen."/>
+			<Answer text="Außer dem vegetarischen Gericht ist auch der Eintopf immer wahlweise mit oder ohne Fleischeinlage zu haben."/>
+			<Answer text="Schweinefrischfleisch kommt nur aus Betrieben mit futterkontrollierter Aufzucht."/>
+		</Quest>
+		<Quest points="600" question="Mit welcher Geschwindigkeit laufen die Förderbänder im Durchschnitt in der Mensa?">
+			<Execution type="pre" command="vlc --fullscreen --play-and-exit /home/divine/JeopardyResources/MensaIntro.mp4"/>
+			<Execution type="post" command="vlc --fullscreen --play-and-exit /home/divine/JeopardyResources/MensaOutro.mp4"/>
+			<Answer text="0.25 Meter pro Sekunde"/>
+			<Answer text="1.0 Meter pro Sekunde"/>
+			<Answer text="0.50 Meter pro Sekunde"/>
+			<Answer text="0.75 Meter pro Sekunde"/>
+		</Quest>
+		<Quest points="800" question="Wie viele Schweine werden umgerechnet benötigt, wenn es in der Mensa Currywurst gibt.">
+			<Execution type="pre" command="showimage /home/divine/JeopardyResources/Currywurst.jpg"/>
+			<Execution type="post" command="showimage /home/divine/JeopardyResources/3Schweine.jpg"/>
+			<Execution type="final" command="showimage /home/divine/JeopardyResources/SchweinWurstVerhaeltnis.png"/>
+			<Answer text="3"/>
+			<Answer text="1"/>
+			<Answer text="10"/>
+			<Answer text="5"/>
+		</Quest>
+		<Quest points="1000" question="Für wie viele Sitzplätze ist die neue Mensa ausgelegt?">
+			<Execution type="pre" command="showimage /home/divine/JeopardyResources/MensaNew.jpg"/>
+			<Answer text="1.900"/>
+			<Answer text="1.200"/>
+			<Answer text="3.500"/>
+			<Answer text="15.100"/>
+		</Quest>
+	</Category>
+	<Category name="KS">
+		<Quest points="200" question="Wie viele Bebots sind auf diesem berümten Bild der Telewerkbank zu sehen?">
+			<Execution type="pre" command="showimage /home/divine/JeopardyResources/Telerwerkbank.jpg"/>
+			<Execution type="post" command="showimage /home/divine/JeopardyResources/Telerwerkbank_2.png"/>
+			<Answer text="20"/>
+			<Answer text="16"/>
+			<Answer text="30"/>
+			<Answer text="10"/>
+		</Quest>
+		<Quest points="400" question="Bei welchem der folgenden Begriffe handelt es sich nicht um ein RAPTOR Basisboard?">
+			<Execution type="pre" command="showimage /home/divine/JeopardyResources/RAPTOR_1.png"/>
+			<Execution type="post" command="showimage /home/divine/JeopardyResources/RAPTOR_2.png"/>
+			<Answer text="RAPTOR-X32"/>
+			<Answer text="RAPTOR2000"/>
+			<Answer text="RAPTOR-X64"/>
+			<Answer text="RAPTOR-XPress"/>
+		</Quest>
+		<Quest points="600" question="Viel zu oft vor der Kaffeemaschine! Daher die Frage, wie lautet ihre Bezeichnung?">
+			<Execution type="pre" command="vlc --fullscreen --play-and-exit /home/divine/JeopardyResources/Kaffee.mp4"/>
+			<Execution type="post" command="showimage /home/divine/JeopardyResources/jura_kaffeemaschine_outro.png"/>
+			<Answer text="Jura Impressa Xs 90"/>
+			<Answer text="250 Kaffee im Jahr"/>
+			<Answer text="1 Kaffee pro Tag"/>
+			<Answer text="Jura Impressa F50 Classic"/>
+		</Quest>
+		<Quest points="800" question="Wer ist der stolze Besitzer dieses Doktorhuts?">
+			<Execution type="pre" command="showimage /home/divine/JeopardyResources/Thorsten_1.png"/>
+			<Execution type="post" command="showimage /home/divine/JeopardyResources/Thorsten_2.jpg"/>
+			<Answer text="Thorsten Jungeblut"/>
+			<Answer text="Ulrich Rückert"/>
+			<Answer text="Mario Porrmann"/>
+			<Answer text="Joaquin Sitte"/>
+		</Quest>
+		<Quest points="1000" question="Wie viel Space ist auf dem DB-Space?">
+			<Execution type="pre" command="showimage /home/divine/JeopardyResources/DB-Space.png"/>
+			<Execution type="post" command="showimage /home/divine/JeopardyResources/db_space_outro.jpg"/>
+			<Answer text="There is always space on DB-Space."/>
+			<Answer text="2 Maß"/>
+			<Answer text="2 MB"/>
+			<Answer text="There is no space on DB-Space."/>
+		</Quest>
+		
+	</Category>
+	<Category name="???">
+		<Quest points="200" question="Wie lautet der Name dieses kleinen Roboters?">
+			<Execution type="pre" command="showimage /home/divine/JeopardyResources/Amiro.jpg"/>
+			<Execution type="final" command="showimage /home/divine/JeopardyResources/Amiro.jpg"/>
+			<Answer text="Amiro"/>
+			<Answer text="Waver"/>
+			<Answer text="CoreVA"/>
+			<Answer text="Bebot"/>
+		</Quest>
+		<Quest points="400" question="Welche Aussage ist falsch? Paderborn ...">
+			<Execution type="final" command="showimage /home/divine/JeopardyResources/Hoffmann.png"/>
+			<Answer text="... ist der Erstwohnsitz von Rüdiger Hoffmann."/>
+			<Answer text="... ist ein Erzbistum."/>
+			<Answer text="... hatte seit den Wahlen (1975) nur Bürgermeister der CDU."/>
+			<Answer text="... ist ein Quellgebiet."/>
+		</Quest>
+		
+		<Quest points="600" question="Wann soll die geplante Modernisierung des Hauptgebäudes der Universität Bielefeld vorraussichtlich abgeschlossen sein?">
+			<Execution type="pre" command="showimage /home/divine/JeopardyResources/UniNew.jpg"/>
+			<Execution type="post" command="showimage /home/divine/JeopardyResources/UniNew2.jpg"/>
+			<Answer text="2030"/>
+			<Answer text="2020"/>
+			<Answer text="2015"/>
+			<Answer text="Nie"/>
+		</Quest>
+		<Quest points="800" question="Welche griechische Gottheit ziert den Brunnen auf dem Marktplatz in Paderborn?">
+			<Execution type="pre" command="showimage /home/divine/JeopardyResources/Neptun-Brunnen-Dom.jpg"/>
+			<Execution type="final" command="showimage /home/divine/JeopardyResources/Paderborn_Neptunbrunnen.jpg"/>
+			<Answer text="Poseidon"/>
+			<Answer text="Hermes"/>
+			<Answer text="Zeus"/>
+			<Answer text="Demeter"/>
+		</Quest>
+		<Quest points="1000" question="Welches Konzept wurde im SFB 614 C1 nicht verfolgt?">
+			<Execution type="pre" command="vlc --fullscreen --play-and-exit /home/divine/JeopardyResources/SFB614_C1.mp4"/>
+			<Answer text="Energieeffizienz durch spezialisierte Bauteile."/>
+			<Answer text="Anpassung an die Umgebung durch modularisierte Funktionalität."/>
+			<Answer text="Resourceneffizienz durch dynamische Funktionsaktivierung."/>
+			<Answer text="Flexibilität durch dynamische Rekonfiguration."/>
+		</Quest>
+	</Category>
+</GameData> 
+
