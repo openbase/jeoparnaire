@@ -42,3 +42,26 @@ and the global raning of all voter.
 * Vote controlling
   * Click the buttons to vote (not recommended)
   * The W-A-S-D keys are mapped to A-B-C-D votes
+  
+## Installation
+
+1. Create a new game folder (e.g. jeoparnaire)
+2. Download the client and server binaries into the game folder
+   * server: 
+   * client:
+3. Create a new resource folder within the game folder and paste there all images and videos you want to use for the game.
+4. Download the game configuration template and store thoses in the resource folder as well.
+
+## Configuration
+
+TODO
+
+## Startup
+
+TODO
+
+
+
+
+
+
