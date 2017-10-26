@@ -1,7 +1,9 @@
-# jeoparnaire
+# Jeoparnaire
 
 An open source network voting game based on the idea of jeopardy and who wants to be a millionaire.
 Perfect for birthday and christmas parties, anniversary celebrations or just for having fun with friends.
+
+## Features 
 
 * questions are individually configurable via config file.
   * plain text questions (native java textfield)
