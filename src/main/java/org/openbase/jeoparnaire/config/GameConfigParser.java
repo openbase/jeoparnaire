@@ -21,13 +21,14 @@ package org.openbase.jeoparnaire.config;
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
-
 import org.openbase.jeoparnaire.data.GameData;
 import java.io.File;
 import java.io.IOException;
-import java.net.URISyntaxException;
 import nu.xom.Document;
 import nu.xom.ParsingException;
+import org.openbase.jeoparnaire.jp.JPGameConfig;
+import org.openbase.jps.core.JPService;
+import org.openbase.jps.exception.JPServiceException;
 import org.openbase.jul.extension.xml.processing.XMLProcessor;
 
 /**
@@ -35,27 +36,26 @@ import org.openbase.jul.extension.xml.processing.XMLProcessor;
  * @author <a href="mailto:divine@openbase.org">Divine Threepwood</a>
  */
 public class GameConfigParser {
-	
-	public static final String CONFIG_FILE_URI = "ImageConfig.xml";
-	
-	public static GameData parseConfigFile() {
-		final Document configDocument;
-		File configFile;
-		try {
-			configFile = new File(ClassLoader.getSystemResource(CONFIG_FILE_URI).toURI());
-		} catch (URISyntaxException ex) {
-			throw new RuntimeException("Could not load "+ CONFIG_FILE_URI, ex);
-		}
-		
-		try {
-			configDocument = XMLProcessor.createDocumentFromFile(configFile);
-		} catch (ParsingException | IOException ex) {
-			throw new RuntimeException("Could not parse "+ CONFIG_FILE_URI, ex);
-		}
-		
-		GameData data = new GameData();
-		data.parse(configDocument);
-		return data;
-	}
-	
+
+    public static GameData parseConfigFile() {
+        
+        final Document configDocument;
+        File configFile;
+        try {
+            configFile = JPService.getProperty(JPGameConfig.class).getValue();
+        } catch (JPServiceException ex) {
+            throw new RuntimeException("Could not load config file!", ex);
+        }
+
+        try {
+            configDocument = XMLProcessor.createDocumentFromFile(configFile);
+        } catch (ParsingException | IOException ex) {
+            throw new RuntimeException("Could not parse " + configFile.getAbsolutePath(), ex);
+        }
+
+        GameData data = new GameData();
+        data.parse(configDocument);
+        return data;
+    }
+
 }

@@ -51,8 +51,7 @@ public class AppExecutorService {
 			}
 
 			if (executionCommand.startsWith(Quest.SHOW_IMAGE_COMMAND_VALUE)) {
-				GameController.getInstance().getChanges().firePropertyChange(GameController.SHOW_IMAGE, null, executionCommand.replaceFirst(Quest.SHOW_IMAGE_COMMAND_VALUE+" "
-						+ "", ""));
+				GameController.getInstance().getChanges().firePropertyChange(GameController.SHOW_IMAGE, null, executionCommand.replaceFirst(Quest.SHOW_IMAGE_COMMAND_VALUE+" ", ""));
 				waitable.performWait();
 			} else {
 				try {

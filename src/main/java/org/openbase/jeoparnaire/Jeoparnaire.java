@@ -23,6 +23,8 @@ package org.openbase.jeoparnaire;
  */
 
 import org.openbase.jeoparnaire.controller.GameController;
+import org.openbase.jeoparnaire.jp.JPGameConfig;
+import org.openbase.jeoparnaire.jp.JPGameResources;
 import org.openbase.jeoparnaire.view.server.GUIMainFrame;
 import org.openbase.jps.core.JPService;
 import org.openbase.jps.preset.JPDebugMode;
@@ -44,7 +46,10 @@ public class Jeoparnaire {
     public static void main(String[] args) {
         try {
 
+            // Setup JPService
             JPService.setApplicationName(Jeoparnaire.class);
+            JPService.registerProperty(JPGameConfig.class);
+            JPService.registerProperty(JPGameResources.class);
             JPService.parseAndExitOnError(args);
 
             GameController gameController = GameController.getInstance();

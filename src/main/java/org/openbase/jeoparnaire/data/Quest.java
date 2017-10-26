@@ -29,6 +29,7 @@ import java.util.Collections;
 import java.util.List;
 import nu.xom.Element;
 import nu.xom.Elements;
+import org.openbase.jeoparnaire.tools.GameVariableStore;
 import org.openbase.jul.exception.printer.ExceptionPrinter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -38,6 +39,8 @@ import org.slf4j.LoggerFactory;
  * @author <a href="mailto:divine@openbase.org">Divine Threepwood</a>
  */
 public class Quest {
+    
+    
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Quest.class);
 
@@ -114,18 +117,18 @@ public class Quest {
         try {
             points = Integer.parseInt(element.getAttributeValue(POINTS_ATTRIBUTE));
             question = element.getAttributeValue(QUESTION_ATTRIBUTE);
-
+            
             Elements executionElements = element.getChildElements(EXECUTION_ELEMENT);
             for (int i = 0; i < executionElements.size(); i++) {
                 if (executionElements.get(i).getAttributeValue(COMMAND_TYPE_ATTRIBUTE).equals(COMMAND_TYPE_PRE_VALUE)) {
-                    preExecutionCommand = executionElements.get(i).getAttributeValue(COMMAND_ATTRIBUTE);
+                    preExecutionCommand = GameVariableStore.resolveVariables(executionElements.get(i).getAttributeValue(COMMAND_ATTRIBUTE));
                 } else if (executionElements.get(i).getAttributeValue(COMMAND_TYPE_ATTRIBUTE).equals(COMMAND_TYPE_POST_VALUE)) {
-                    postExecutionCommand = executionElements.get(i).getAttributeValue(COMMAND_ATTRIBUTE);
+                    postExecutionCommand = GameVariableStore.resolveVariables(executionElements.get(i).getAttributeValue(COMMAND_ATTRIBUTE));
                 } else if (executionElements.get(i).getAttributeValue(COMMAND_TYPE_ATTRIBUTE).equals(COMMAND_TYPE_FINAL_VALUE)) {
-                    finalExecutionCommand = executionElements.get(i).getAttributeValue(COMMAND_ATTRIBUTE);
+                    finalExecutionCommand = GameVariableStore.resolveVariables(executionElements.get(i).getAttributeValue(COMMAND_ATTRIBUTE));
                 } else {
                     LOGGER.warn("Unknown command type found! prepare as pre command.");
-                    preExecutionCommand = executionElements.get(i).getAttributeValue(COMMAND_ATTRIBUTE);
+                    preExecutionCommand = GameVariableStore.resolveVariables(executionElements.get(i).getAttributeValue(COMMAND_ATTRIBUTE));
                 }
             }
 
