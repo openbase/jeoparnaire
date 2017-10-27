@@ -83,6 +83,6 @@ client: ``java -jar jeoparnaire-client-1.0.0.jar``
 
 ## Contribution
 * Feel free to report [new Issues](https://github.com/openbase/jeoparnaire/issues/new)!
-* If you are developer and you want to contribute to BCozy
+* If you are developer and you want to contribute to Jeoparnaire
     * Fork Jeoparnaire apply your features or fixes and create pull requests.
     * For long term contribution just apply for an openbase membership via support@openbase.org
