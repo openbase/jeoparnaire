@@ -5,7 +5,7 @@ Perfect for birthday and christmas parties, anniversary celebrations or just for
 
 ## Features 
 
-* Questions individually configurable via config file
+* Questions are individually configurable via config file
   * Plain text questions
   * Images
   * Videos (e.g. vlc used as player)
@@ -54,13 +54,13 @@ Requirements: A Java Runtime Environment (JRE) is installed on your system:
    * client: https://github.com/openbase/jeoparnaire/releases/download/v1.0.0/jeoparnaire-client-1.0.0.jar
 3. Create a new resource folder within the game folder and place here all images and videos you want to use for the game.
 4. Download the game configuration template and store thoses in the resource folder as well:
-   * template: https://raw.githubusercontent.com/openbase/jeoparnaire/master/src/main/resources/JeoparnaireGameConfig.xml
+   * https://raw.githubusercontent.com/openbase/jeoparnaire/master/src/main/resources/JeoparnaireGameConfig.xml
 
 ## Configuration
 
 Modify the JeoparnaireGameConfig.xml file:
 * Add our categories, quest and answers.
-* link your images and videos
+* Link your images and videos
 
 TODO: more details
 
