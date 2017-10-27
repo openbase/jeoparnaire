@@ -25,7 +25,7 @@ Perfect for birthday and christmas parties, anniversary celebrations or just for
 **The quest will be displayed:**
 ![](https://raw.githubusercontent.com/openbase/jeoparnaire/master/docs/images/jeoparnaire-quest.png)
 
-**all connected clientc can start the voting:**
+**All connected clients can vote now:**
 ![](https://raw.githubusercontent.com/openbase/jeoparnaire/master/docs/images/jeoparnaire-client.png)
 
 **After the voting is finished the quest results are displayed:**
