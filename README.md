@@ -42,11 +42,13 @@ and the global raning of all voter.
 * Vote controlling
   * Click the buttons to vote (not recommended)
   * The W-A-S-D keys are mapped to A-B-C-D votes
-  
-## Installation
 
-Requirements: A Java Runtime Environment (JRE) is installed on your system:
+## Requirements
+
+A Java Runtime Environment (JRE) is needed on the server and on each client machine:
 * http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
+
+## Installation
 
 1. Create a new game folder (e.g. jeoparnaire)
 2. Download the client and server binaries into the game folder:
