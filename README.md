@@ -1,5 +1,8 @@
 # Jeoparnaire
 
+[![Build Status](https://travis-ci.org/openbase/jeoparnaire.svg?branch=master)](https://travis-ci.org/openbase/jeoparnaire?branch=master)
+[![Build Status](https://travis-ci.org/openbase/jeoparnaire.svg?branch=latest-stable)](https://travis-ci.org/openbase/jeoparnaire?branch=latest-stable)
+
 An open source network voting game based on the idea of jeopardy and who wants to be a millionaire.
 Perfect for birthday and christmas parties, anniversary celebrations or just for having fun with friends.
 
@@ -77,3 +80,9 @@ Just execute ``jeoparnaire-client-1.0.0.jar`` to start the voting client.
 
 server: ``java -jar jeoparnaire-1.0.0.jar``
 client: ``java -jar jeoparnaire-client-1.0.0.jar``
+
+## Contribution
+* Feel free to report [new Issues](https://github.com/openbase/jeoparnaire/issues/new)!
+* If you are developer and you want to contribute to BCozy
+    * Fork Jeoparnaire apply your features or fixes and create pull requests.
+    * For long term contribution just apply for an openbase membership via support@openbase.org
