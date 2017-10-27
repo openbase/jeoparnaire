@@ -19,22 +19,22 @@ Perfect for birthday and christmas parties, anniversary celebrations or just for
 
 ## Preview
 
-Select a category or use the random generator to select a quest.
+**Select a category or use the random generator to select a quest:**
 ![](https://raw.githubusercontent.com/openbase/jeoparnaire/master/docs/images/jeoparnaire-overview.png)
 
-The quest will be displayed
+**The quest will be displayed:**
 ![](https://raw.githubusercontent.com/openbase/jeoparnaire/master/docs/images/jeoparnaire-quest.png)
 
-all connected client can start the voting...
+**all connected clientc can start the voting:**
 ![](https://raw.githubusercontent.com/openbase/jeoparnaire/master/docs/images/jeoparnaire-client.png)
 
-After the voting is finished the quest results are displayed.
+**After the voting is finished the quest results are displayed:**
 ![](https://raw.githubusercontent.com/openbase/jeoparnaire/master/docs/images/jeoparnaire-quest-result.png)
 
-Followed by the resulting points
+**Followed by the resulting points:**
 ![](https://raw.githubusercontent.com/openbase/jeoparnaire/master/docs/images/jeoparnaire-points-quest.png)
 
-and the global raning of all voter.
+**Finally the global raning of all voter is shown:**
 ![](https://raw.githubusercontent.com/openbase/jeoparnaire/master/docs/images/jeoparnaire-point-global.png)
 
 ## Voting hints
