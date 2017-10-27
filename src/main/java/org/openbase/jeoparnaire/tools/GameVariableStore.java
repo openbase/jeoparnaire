@@ -29,12 +29,16 @@ import org.openbase.jul.exception.CouldNotPerformException;
 import org.openbase.jul.exception.FatalImplementationErrorException;
 import org.openbase.jul.processing.VariableProcessor;
 import org.openbase.jul.processing.VariableStore;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author <a href="mailto:divine@openbase.org">Divine Threepwood</a>
  */
 public class GameVariableStore {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(GameVariableStore.class);
+    
     private static GameVariableStore instance;
     private final VariableStore variableStore;
 
@@ -44,7 +48,8 @@ public class GameVariableStore {
 
     private void init() {
         try {
-            variableStore.store("RES", JPService.getProperty(JPGameResources.class).getValue().getAbsolutePath());
+            variableStore.store("RESOURCES", JPService.getProperty(JPGameResources.class).getValue().getAbsolutePath());
+            LOGGER.info("Resource directory is set to "+JPService.getProperty(JPGameResources.class).getValue().getAbsolutePath());
         } catch (JPNotAvailableException ex) {
             new FatalImplementationErrorException("Could not init variable store!", this, ex);
         }

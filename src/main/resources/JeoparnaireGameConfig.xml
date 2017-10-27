@@ -2,37 +2,37 @@
 <GameData> 
 	<Category name="General Knowledge">
 		<Quest points="200" question="How many people live on earth 2016?">
-			<Execution type="pre" command="showimage ${RES}/earth.jpg"/>
-			<Execution type="post" command="showimage ${RES}/people.jpg"/>
-			<Execution type="final" command="showimage ${RES}/earth-with-people.png"/>
+			<Execution type="pre" command="showimage ${RESOURCES}/earth.jpg"/>
+			<Execution type="post" command="showimage ${RESOURCES}/people.jpg"/>
+			<Execution type="final" command="showimage ${RESOURCES}/earth-with-people.png"/>
 			<Answer text="7,442 billion "/>
 			<Answer text="8,500 billion "/>
 			<Answer text="6,028 billion "/>
 			<Answer text="2,275 billion "/>
 		</Quest>
 		<Quest points="400" question="How faraway is the moon?">
-			<Execution type="final" command="showimage ${RES}/final-image.jpg"/>
+			<Execution type="final" command="showimage ${RESOURCES}/final-image.jpg"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="600" question="How ... ?">
-			<Execution type="post" command="showimage ${RES}/post-image.jpg"/>
+			<Execution type="post" command="showimage ${RESOURCES}/post-image.jpg"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="800" question="How ... ?">
-			<Execution type="post" command="showimage ${RES}/post-image.jpg"/>
+			<Execution type="post" command="showimage ${RESOURCES}/post-image.jpg"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="1000" question="How ... ?">
-			<Execution type="post" command="showimage ${RES}/post-image.jpg"/>
+			<Execution type="post" command="showimage ${RESOURCES}/post-image.jpg"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
@@ -41,37 +41,37 @@
 	</Category>
 	<Category name="Technology">
 		<Quest points="200" question="How ... ?">
-			<Execution  type="pre" command="vlc --fullscreen ${RES}/video.mp4"/>
+			<Execution  type="pre" command="vlc --fullscreen ${RESOURCES}/video.mp4"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="400" question="How ... ?">
-			<Execution  type="final" command="showimage ${RES}/image.jpg"/>
+			<Execution  type="final" command="showimage ${RESOURCES}/image.jpg"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="600" question="How ... ?">
-			<Execution type="pre" command="showimage ${RES}/image.jpg"/>
-			<Execution type="final" command="showimage ${RES}/image.jpg"/>
+			<Execution type="pre" command="showimage ${RESOURCES}/image.jpg"/>
+			<Execution type="final" command="showimage ${RESOURCES}/image.jpg"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="800" question="How ... ?">
-			<Execution type="pre" command="showimage ${RES}/image.jpg"/>
-			<Execution type="final" command="showimage ${RES}/image.jpg"/>
+			<Execution type="pre" command="showimage ${RESOURCES}/image.jpg"/>
+			<Execution type="final" command="showimage ${RESOURCES}/image.jpg"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="1000" question="How ... ?">
-			<Execution type="final" command="showimage ${RES}/image.jpg"/>
+			<Execution type="final" command="showimage ${RESOURCES}/image.jpg"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
@@ -80,38 +80,38 @@
 	</Category>
 	<Category name="Movie">
 		<Quest points="200" question="How ... ?">
-			<Execution type="pre" command="vlc --fullscreen ${RES}/video.avi"/>
+			<Execution type="pre" command="vlc --fullscreen ${RESOURCES}/video.avi"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="400" question="How ... ?">
-			<Execution type="pre" command="vlc --fullscreen ${RES}/video.m2t"/>
+			<Execution type="pre" command="vlc --fullscreen ${RESOURCES}/video.m2t"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="600" question="How ... ?">
-			<Execution type="pre" command="vlc --fullscreen ${RES}/video.avi"/>
-			<Execution type="post" command="showimage ${RES}/image.jpg"/>
+			<Execution type="pre" command="vlc --fullscreen ${RESOURCES}/video.avi"/>
+			<Execution type="post" command="showimage ${RESOURCES}/image.jpg"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="800" question="How ... ?">
-			<Execution type="pre" command="vlc --fullscreen ${RES}/video.avi"/>
-			<Execution type="post" command="showimage ${RES}/image.png"/>
+			<Execution type="pre" command="vlc --fullscreen ${RESOURCES}/video.avi"/>
+			<Execution type="post" command="showimage ${RESOURCES}/image.png"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="1000" question="How ... ?">
-			<Execution type="pre" command="vlc --fullscreen ${RES}/video.avi"/>
-			<Execution type="final" command="vlc --fullscreen ${RES}/video.avi"/>
+			<Execution type="pre" command="vlc --fullscreen ${RESOURCES}/video.avi"/>
+			<Execution type="final" command="vlc --fullscreen ${RESOURCES}/video.avi"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
@@ -120,37 +120,37 @@
 	</Category>
 	<Category name="People">
 		<Quest points="200" question="How ... ?">
-			<Execution type="final" command="showimage ${RES}/image.jpg"/>
+			<Execution type="final" command="showimage ${RESOURCES}/image.jpg"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="400" question="How ... ?">
-			<Execution type="pre" command="showimage ${RES}/image.jpg"/>
-			<Execution type="final" command="showimage ${RES}/image.jpg"/>
+			<Execution type="pre" command="showimage ${RESOURCES}/image.jpg"/>
+			<Execution type="final" command="showimage ${RESOURCES}/image.jpg"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="600" question="How ... ?">
-			<Execution type="pre" command="vlc --fullscreen  ${RES}/video.mp4"/>
+			<Execution type="pre" command="vlc --fullscreen  ${RESOURCES}/video.mp4"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="800" question="How ... ?">
-			<Execution type="post" command="showimage ${RES}/image.jpg"/>
+			<Execution type="post" command="showimage ${RESOURCES}/image.jpg"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="1000" question="How ... ?">
-			<Execution type="pre" command="vlc --fullscreen ${RES}/video.avi"/>
-			<Execution type="post" command="vlc --fullscreen ${RES}/video.avi"/>
+			<Execution type="pre" command="vlc --fullscreen ${RESOURCES}/video.avi"/>
+			<Execution type="post" command="vlc --fullscreen ${RESOURCES}/video.avi"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
@@ -160,39 +160,39 @@
 	</Category>
 	<Category name="???">
 		<Quest points="200" question="How ... ?">
-			<Execution type="pre" command="vlc --fullscreen ${RES}/video.avi"/>
-			<Execution type="post" command="vlc --fullscreen ${RES}/video.avi"/>
+			<Execution type="pre" command="vlc --fullscreen ${RESOURCES}/video.avi"/>
+			<Execution type="post" command="vlc --fullscreen ${RESOURCES}/video.avi"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="400" question="How ... ?">
-			<Execution type="final" command="showimage ${RES}/image.png"/>
+			<Execution type="final" command="showimage ${RESOURCES}/image.png"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="600" question="How ... ?">
-			<Execution type="pre" command="vlc --fullscreen ${RES}/video.avi"/>
-			<Execution type="post" command="vlc --fullscreen ${RES}/video.avi"/>
+			<Execution type="pre" command="vlc --fullscreen ${RESOURCES}/video.avi"/>
+			<Execution type="post" command="vlc --fullscreen ${RESOURCES}/video.avi"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="800" question="How ... ?">
-			<Execution type="pre" command="vlc --fullscreen ${RES}/video.avi"/>
-			<Execution type="final" command="vlc --fullscreen ${RES}/video.avi"/>
+			<Execution type="pre" command="vlc --fullscreen ${RESOURCES}/video.avi"/>
+			<Execution type="final" command="vlc --fullscreen ${RESOURCES}/video.avi"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
 			<Answer text="Wrong Answer 3"/>
 		</Quest>
 		<Quest points="1000" question="How ... ?">
-			<Execution type="pre" command="vlc --fullscreen ${RES}/video.avi"/>
-			<Execution type="post" command="vlc --fullscreen ${RES}/video.avi"/>
+			<Execution type="pre" command="vlc --fullscreen ${RESOURCES}/video.avi"/>
+			<Execution type="post" command="vlc --fullscreen ${RESOURCES}/video.avi"/>
 			<Answer text="Right Answer"/>
 			<Answer text="Wrong Answer 1"/>
 			<Answer text="Wrong Answer 2"/>
