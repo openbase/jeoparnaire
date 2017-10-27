@@ -51,7 +51,7 @@ Requirements: A Java Runtime Environment (JRE) is installed on your system:
 1. Create a new game folder (e.g. jeoparnaire)
 2. Download the client and server binaries into the game folder:
    * server: https://github.com/openbase/jeoparnaire/releases/download/v1.0.0/jeoparnaire-1.0.0.jar
-   * client: https://github.com/openbase/jeoparnaire/releases/download/v1.0.0/jeoparnaire-clinet-1.0.0.jar
+   * client: https://github.com/openbase/jeoparnaire/releases/download/v1.0.0/jeoparnaire-client-1.0.0.jar
 3. Create a new resource folder within the game folder and place here all images and videos you want to use for the game.
 4. Download the game configuration template and store thoses in the resource folder as well:
    * ![](https://raw.githubusercontent.com/openbase/jeoparnaire/master/src/main/resources/JeoparnaireGameConfig.xml)
