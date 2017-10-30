@@ -1,11 +1,14 @@
 # Jeoparnaire
 
+[![Build Status](https://travis-ci.org/openbase/jeoparnaire.svg?branch=master)](https://travis-ci.org/openbase/jeoparnaire?branch=master)
+[![Build Status](https://travis-ci.org/openbase/jeoparnaire.svg?branch=latest-stable)](https://travis-ci.org/openbase/jeoparnaire?branch=latest-stable)
+
 An open source network voting game based on the idea of jeopardy and who wants to be a millionaire.
 Perfect for birthday and christmas parties, anniversary celebrations or just for having fun with friends.
 
 ## Features 
 
-* Questions individually configurable via config file
+* Questions are individually configurable via config file
   * Plain text questions
   * Images
   * Videos (e.g. vlc used as player)
@@ -16,22 +19,22 @@ Perfect for birthday and christmas parties, anniversary celebrations or just for
 
 ## Preview
 
-Select a category or use the random generator to select a quest.
+**Select a category or use the random generator to select a quest:**
 ![](https://raw.githubusercontent.com/openbase/jeoparnaire/master/docs/images/jeoparnaire-overview.png)
 
-The quest will be displayed
+**The quest will be displayed:**
 ![](https://raw.githubusercontent.com/openbase/jeoparnaire/master/docs/images/jeoparnaire-quest.png)
 
-all connected client can start the voting...
+**All connected clients can vote now:**
 ![](https://raw.githubusercontent.com/openbase/jeoparnaire/master/docs/images/jeoparnaire-client.png)
 
-After the voting is finished the quest results are displayed.
+**After the voting is finished the quest results are displayed:**
 ![](https://raw.githubusercontent.com/openbase/jeoparnaire/master/docs/images/jeoparnaire-quest-result.png)
 
-Followed by the resulting points
+**Followed by the resulting points:**
 ![](https://raw.githubusercontent.com/openbase/jeoparnaire/master/docs/images/jeoparnaire-points-quest.png)
 
-and the global raning of all voter.
+**Finally the global raning of all voter is shown:**
 ![](https://raw.githubusercontent.com/openbase/jeoparnaire/master/docs/images/jeoparnaire-point-global.png)
 
 ## Voting hints
@@ -42,26 +45,44 @@ and the global raning of all voter.
 * Vote controlling
   * Click the buttons to vote (not recommended)
   * The W-A-S-D keys are mapped to A-B-C-D votes
-  
+
+## Requirements
+
+A Java Runtime Environment (JRE) is needed on the server and on each client machine:
+* http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
+
 ## Installation
 
 1. Create a new game folder (e.g. jeoparnaire)
-2. Download the client and server binaries into the game folder
-   * server: 
-   * client:
-3. Create a new resource folder within the game folder and paste there all images and videos you want to use for the game.
-4. Download the game configuration template and store thoses in the resource folder as well.
+2. Download the client and server binaries into the game folder:
+   * server: https://github.com/openbase/jeoparnaire/releases/download/v1.0.0/jeoparnaire-1.0.0.jar
+   * client: https://github.com/openbase/jeoparnaire/releases/download/v1.0.0/jeoparnaire-client-1.0.0.jar
+3. Create a new resource folder within the game folder and place here all images and videos you want to use for the game.
+4. Download the game configuration template and store thoses in the resource folder as well:
+   * https://raw.githubusercontent.com/openbase/jeoparnaire/master/src/main/resources/JeoparnaireGameConfig.xml
 
 ## Configuration
 
-TODO
+Modify the JeoparnaireGameConfig.xml file:
+* Add our categories, quest and answers.
+* Link your images and videos
+
+TODO: more details
 
 ## Startup
 
-TODO
+### Windows
 
+Just execute ``jeoparnaire-1.0.0.jar`` to start the server.
+Just execute ``jeoparnaire-client-1.0.0.jar`` to start the voting client.
 
+### Linux
 
+server: ``java -jar jeoparnaire-1.0.0.jar``
+client: ``java -jar jeoparnaire-client-1.0.0.jar``
 
-
-
+## Contribution
+* Feel free to report [new Issues](https://github.com/openbase/jeoparnaire/issues/new)!
+* If you are developer and you want to contribute to Jeoparnaire
+    * Fork Jeoparnaire apply your features or fixes and create pull requests.
+    * For long term contribution just apply for an openbase membership via support@openbase.org
