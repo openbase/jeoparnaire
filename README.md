@@ -43,6 +43,24 @@ Perfect for birthday and christmas parties, anniversary celebrations or just for
   * The first 10 correct votes earn points
 * Negative points (25% of quest points) for wrong votes
 
+## Controlling
+
+### Server
+  * `Enter` Confirm Quest / Next
+    * Note: During the voting you need to confirme more than ones by pressing `Enter` if the vote is not finished yet.
+      * Not finished means in this case there are still some points left for correct votes.
+  * `Space` Random quest selection in the overview 
+  * `Mouse` Can be used to select a quest in the overview
+  
+  Note: A hand "presenter" to control the server is supported as well.
+
+### Client
+  * Vote via the W-A-S-D keys on your keyboard which are mapped to A-B-C-D votes
+    * `W` is mapped to answer A
+    * `E` is mapped to answer B
+    * `S` is mapped to answer C
+    * `D` is mapped to answer D
+
 ## Requirements
 
 A Java Runtime Environment (JRE) is needed on the server and on each client machine:
@@ -76,7 +94,6 @@ Modify the JeoparnaireGameConfig.xml file:
     <Answer text="2,275 billion "/> <!-- wrong answer -->
 </Quest>
 ```
-TODO: more details
 
 ## Startup
 
@@ -87,21 +104,6 @@ TODO: more details
 ### Linux
 * server: ``java -jar jeoparnaire-x.x.x.jar``
 * client: ``java -jar jeoparnaire-client-x.x.x.jar``
-
-## Controlling
-
-### Server
-  * `Enter` Confirm Quest / Next
-    * Note: During the voting you need to confirme more than ones by pressing `Enter` if the vote is not finished yet.
-      * Not finished means in this case there are still some points left for correct votes.
-  * `Space` Random quest selection in overview 
-
-### Client
-  * Vote via the W-A-S-D keys on your keyboard which are mapped to A-B-C-D votes
-    * `W` is mapped to answer A
-    * `E` is mapped to answer B
-    * `S` is mapped to answer C
-    * `D` is mapped to answer D
 
 ## Contribution
 * Feel free to report [new Issues](https://github.com/openbase/jeoparnaire/issues/new)!
