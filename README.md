@@ -42,9 +42,6 @@ Perfect for birthday and christmas parties, anniversary celebrations or just for
 * Parallel voting, first vote first win
   * The first 10 correct votes earn points
 * Negative points (25% of quest points) for wrong votes
-* Vote controlling
-  * Click the buttons to vote (not recommended)
-  * The W-A-S-D keys are mapped to A-B-C-D votes
 
 ## Requirements
 
@@ -57,8 +54,8 @@ A Java Runtime Environment (JRE) is needed on the server and on each client mach
 2. Download the client and server binaries into the game folder:
    * server: https://github.com/openbase/jeoparnaire/releases/download/v1.0.0/jeoparnaire-1.0.0.jar
    * client: https://github.com/openbase/jeoparnaire/releases/download/v1.0.0/jeoparnaire-client-1.0.0.jar
-3. Create a new `resource` folder within the game folder and place here all images and videos you want to use for the game.
-4. Download the game configuration template and store thoses in the resource folder as well:
+3. Create a new `JeoparnaireResource` folder within the game folder and place here all images and videos you want to use for the game.
+4. Download the game configuration template and store thoses in the `JeoparnaireResource` folder as well:
    * https://raw.githubusercontent.com/openbase/jeoparnaire/master/src/main/resources/JeoparnaireGameConfig.xml
      * Download via link menu -> "Save link as..."
 
@@ -74,13 +71,28 @@ TODO: more details
 
 ### Windows
 
-Just execute ``jeoparnaire-1.0.0.jar`` to start the server.
-Just execute ``jeoparnaire-client-1.0.0.jar`` to start the voting client.
+Just execute ``jeoparnaire-x.x.x.jar`` to start the server.
+Just execute ``jeoparnaire-client-x.x.x.jar`` to start the voting client.
 
 ### Linux
 
-server: ``java -jar jeoparnaire-1.0.0.jar``
-client: ``java -jar jeoparnaire-client-1.0.0.jar``
+server: ``java -jar jeoparnaire-x.x.x.jar``
+client: ``java -jar jeoparnaire-client-x.x.x.jar``
+
+## Controlling
+
+### Server
+  * Enter -> Confirm Quest / Next
+    * Note: During the voting you need to confirme more than ones by pressing `Enter` if the vote is not finished yet.
+      * Not finished means in this case there are still some points left for correct votes.
+  * Space -> Random quest selection in overview 
+
+### Client
+  * Vote via the W-A-S-D keys on your keyboard which are mapped to A-B-C-D votes
+    * W -> A
+    * E -> B
+    * S -> C
+    * D -> D
 
 ## Contribution
 * Feel free to report [new Issues](https://github.com/openbase/jeoparnaire/issues/new)!
