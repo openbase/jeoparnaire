@@ -82,17 +82,17 @@ client: ``java -jar jeoparnaire-client-x.x.x.jar``
 ## Controlling
 
 ### Server
-  * Enter -> Confirm Quest / Next
+  * `Enter` Confirm Quest / Next
     * Note: During the voting you need to confirme more than ones by pressing `Enter` if the vote is not finished yet.
       * Not finished means in this case there are still some points left for correct votes.
-  * Space -> Random quest selection in overview 
+  * `Space` Random quest selection in overview 
 
 ### Client
   * Vote via the W-A-S-D keys on your keyboard which are mapped to A-B-C-D votes
-    * W -> A
-    * E -> B
-    * S -> C
-    * D -> D
+    * `W` is mapped to answer A
+    * `E` is mapped to answer B
+    * `S` is mapped to answer C
+    * `D` is mapped to answer D
 
 ## Contribution
 * Feel free to report [new Issues](https://github.com/openbase/jeoparnaire/issues/new)!
