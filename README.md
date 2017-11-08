@@ -67,14 +67,14 @@ Modify the JeoparnaireGameConfig.xml file:
 
 ``` xml
 <Quest points="200" question="How many people live on earth 2016?">
-			<Execution type="pre" command="showimage ${RESOURCES}/earth.jpg"/> <!-- optional -->
-			<Execution type="post" command="showimage ${RESOURCES}/people.jpg"/> <!-- optional -->
-			<Execution type="final" command="showimage ${RESOURCES}/earth-with-people.png"/> <!-- optional -->
-			<Answer text="7,442 billion "/> <!-- first answer needs to be the right one -->
-			<Answer text="8,500 billion "/> <!-- wrong answer -->
-			<Answer text="6,028 billion "/> <!-- wrong answer -->
-			<Answer text="2,275 billion "/> <!-- wrong answer -->
-		</Quest>
+    <Execution type="pre" command="showimage ${RESOURCES}/earth.jpg"/> <!-- optional: will be displayed before the question is asked -->
+    <Execution type="post" command="showimage ${RESOURCES}/people.jpg"/> <!-- optional: will be displayed after the vote is finished -->
+    <Execution type="final" command="showimage ${RESOURCES}/earth-with-people.png"/> <!-- optional: will be displayed after the correct answer is given -->
+    <Answer text="7,442 billion "/> <!-- first answer needs to be the right one -->
+    <Answer text="8,500 billion "/> <!-- wrong answer -->
+    <Answer text="6,028 billion "/> <!-- wrong answer -->
+    <Answer text="2,275 billion "/> <!-- wrong answer -->
+</Quest>
 ```
 TODO: more details
 
