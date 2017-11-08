@@ -65,6 +65,17 @@ Modify the JeoparnaireGameConfig.xml file:
 * Add our categories, quest and answers.
 * Link your images and videos
 
+``` xml
+<Quest points="200" question="How many people live on earth 2016?">
+			<Execution type="pre" command="showimage ${RESOURCES}/earth.jpg"/> <!-- optional -->
+			<Execution type="post" command="showimage ${RESOURCES}/people.jpg"/> <!-- optional -->
+			<Execution type="final" command="showimage ${RESOURCES}/earth-with-people.png"/> <!-- optional -->
+			<Answer text="7,442 billion "/> <!-- first answer needs to be the right one -->
+			<Answer text="8,500 billion "/> <!-- wrong answer -->
+			<Answer text="6,028 billion "/> <!-- wrong answer -->
+			<Answer text="2,275 billion "/> <!-- wrong answer -->
+		</Quest>
+```
 TODO: more details
 
 ## Startup
