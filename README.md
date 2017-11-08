@@ -70,14 +70,12 @@ TODO: more details
 ## Startup
 
 ### Windows
-
-Just execute ``jeoparnaire-x.x.x.jar`` to start the server.
-Just execute ``jeoparnaire-client-x.x.x.jar`` to start the voting client.
+* Just execute ``jeoparnaire-x.x.x.jar`` to start the server.
+* Just execute ``jeoparnaire-client-x.x.x.jar`` to start the voting client.
 
 ### Linux
-
-server: ``java -jar jeoparnaire-x.x.x.jar``
-client: ``java -jar jeoparnaire-client-x.x.x.jar``
+* server: ``java -jar jeoparnaire-x.x.x.jar``
+* client: ``java -jar jeoparnaire-client-x.x.x.jar``
 
 ## Controlling
 
