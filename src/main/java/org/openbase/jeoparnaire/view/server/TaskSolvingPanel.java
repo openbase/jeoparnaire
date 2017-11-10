@@ -35,6 +35,7 @@ import java.beans.PropertyChangeListener;
 import java.text.DecimalFormat;
 import java.util.List;
 import java.util.Map;
+import org.openbase.jeoparnaire.view.GameStyle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -61,6 +62,7 @@ public class TaskSolvingPanel extends javax.swing.JPanel implements PropertyChan
 	public TaskSolvingPanel() {
 		initComponents();
 		questionLabel.setForeground(GameColors.FONT_TITLE);
+        questionLabel.setFont(questionLabel.getFont().deriveFont(GameStyle.FONT_SIZE));
 		questionPanel.setBorder(javax.swing.BorderFactory.createLineBorder(GameColors.BLACK, 8));
 		questionPanel.setBackground(GameColors.BLUE);
 		setBackground(GameColors.BLUE_BORDER);
@@ -99,6 +101,12 @@ public class TaskSolvingPanel extends javax.swing.JPanel implements PropertyChan
 		answerBLabel.setText(buildHTML("B", answers.get(B).getText()));
 		answerCLabel.setText(buildHTML("C", answers.get(C).getText()));
 		answerDLabel.setText(buildHTML("D", answers.get(D).getText()));
+        
+        answerALabel.setFont(answerALabel.getFont().deriveFont(GameStyle.FONT_SIZE));
+        answerBLabel.setFont(answerBLabel.getFont().deriveFont(GameStyle.FONT_SIZE));
+        answerCLabel.setFont(answerCLabel.getFont().deriveFont(GameStyle.FONT_SIZE));
+        answerDLabel.setFont(answerDLabel.getFont().deriveFont(GameStyle.FONT_SIZE));
+        
 		answerAPanel.setBackground(GameColors.BLUE);
 		answerBPanel.setBackground(GameColors.BLUE);
 		answerCPanel.setBackground(GameColors.BLUE);

@@ -267,6 +267,11 @@
         </dependency>
         <dependency>
             <groupId>org.openbase</groupId>
+            <artifactId>jul.audio</artifactId>
+            <version>${dependency.jul.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openbase</groupId>
             <artifactId>jul.exception</artifactId>
             <version>${dependency.jul.version}</version>
         </dependency>

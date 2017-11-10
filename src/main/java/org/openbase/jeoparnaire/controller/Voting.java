@@ -29,6 +29,7 @@ import org.openbase.jeoparnaire.net.command.VoteCommand.Vote;
 import org.openbase.jeoparnaire.net.server.ServerService;
 import java.util.*;
 import java.util.logging.Level;
+import org.openbase.jeoparnaire.tools.GameSound;
 import org.openbase.jul.exception.CouldNotPerformException;
 import org.slf4j.LoggerFactory;
 
@@ -119,9 +120,11 @@ public class Voting {
 
         if (!activeQuest.getAnswers().get(vote.index).isRight()) {
             loser.put(delay, player);
+            GameSound.WrongVote.play();
             return;
         }
         winner.put(delay, player);
+        GameSound.RightVote.play();
     }
 
     public Collection<Player> getWinnerAndLoser() {

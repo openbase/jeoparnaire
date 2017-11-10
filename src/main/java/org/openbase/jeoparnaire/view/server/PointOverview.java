@@ -30,6 +30,7 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import org.openbase.jeoparnaire.state.PresentGlobalPointsState;
 import org.openbase.jeoparnaire.state.PresentQuestPointsState;
+import org.openbase.jeoparnaire.view.GameStyle;
 import org.openbase.jul.visual.swing.layout.LayoutGenerator;
 
 /**
@@ -52,6 +53,7 @@ public class PointOverview extends javax.swing.JPanel implements PropertyChangeL
 		this.setBackground(GameColors.BLUE_BORDER);
 		this.setBorder(javax.swing.BorderFactory.createLineBorder(GameColors.BLACK, 2));
 		playerLabel.setForeground(GameColors.FONT_TITLE);
+        playerLabel.setFont(playerLabel.getFont().deriveFont(GameStyle.FONT_SIZE));
 		titlePanel.setBackground(GameColors.BLUE);
 		titlePanel.setBorder(javax.swing.BorderFactory.createLineBorder(GameColors.BLACK, 8));
 		this.updateDynamicComponents(PlayerDisplay.Type.Global);

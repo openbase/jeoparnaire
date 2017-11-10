@@ -25,6 +25,7 @@ package org.openbase.jeoparnaire.view.server;
 import org.openbase.jeoparnaire.data.Quest;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import org.openbase.jeoparnaire.view.GameStyle;
 
 /**
  *
@@ -53,6 +54,7 @@ public class QuestPanel extends javax.swing.JPanel implements PropertyChangeList
 		this.initDynamicComponents();
 		this.jButton1.setText(Integer.toString(quest.getPoints()));
 		this.quest.addPropertyChangeListener(this);
+        jButton1.setFont(jButton1.getFont().deriveFont(GameStyle.FONT_SIZE));
 	}
 
 	/**

@@ -1,5 +1,7 @@
 package org.openbase.jeoparnaire.view.server;
 
+import org.openbase.jeoparnaire.view.GameStyle;
+
 /*-
  * #%L
  * Jeoparnaire
@@ -82,6 +84,7 @@ public class TopicPanel extends javax.swing.JPanel {
 
 	private void initDynamicComponents() {
 		jLabel1.setForeground(GameColors.FONT_TITLE);
+        jLabel1.setFont(jLabel1.getFont().deriveFont(GameStyle.FONT_SIZE));
 		setBackground(GameColors.BLUE);
 		setBorder(javax.swing.BorderFactory.createLineBorder(GameColors.BLACK, 8));
 	}
