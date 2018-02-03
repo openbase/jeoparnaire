@@ -1,10 +1,12 @@
 package org.openbase.jeoparnaire.view.server;
 
+import org.openbase.jeoparnaire.view.GameStyle;
+
 /*-
  * #%L
  * Jeoparnaire
  * %%
- * Copyright (C) 2011 - 2017 openbase.org
+ * Copyright (C) 2011 - 2018 openbase.org
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
@@ -82,6 +84,7 @@ public class TopicPanel extends javax.swing.JPanel {
 
 	private void initDynamicComponents() {
 		jLabel1.setForeground(GameColors.FONT_TITLE);
+        jLabel1.setFont(jLabel1.getFont().deriveFont(GameStyle.FONT_SIZE));
 		setBackground(GameColors.BLUE);
 		setBorder(javax.swing.BorderFactory.createLineBorder(GameColors.BLACK, 8));
 	}

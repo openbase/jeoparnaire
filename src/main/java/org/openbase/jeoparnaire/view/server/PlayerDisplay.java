@@ -4,7 +4,7 @@ package org.openbase.jeoparnaire.view.server;
  * #%L
  * Jeoparnaire
  * %%
- * Copyright (C) 2011 - 2017 openbase.org
+ * Copyright (C) 2011 - 2018 openbase.org
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
@@ -26,6 +26,7 @@ import org.openbase.jeoparnaire.data.Player;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Collection;
+import org.openbase.jeoparnaire.view.GameStyle;
 
 /**
  *
@@ -39,7 +40,6 @@ public class PlayerDisplay extends javax.swing.JPanel {
 
 		Quest, Global
 	};
-//	private final Player player;
 
 	public static Collection<PlayerDisplay> getPanels(Collection<Player> playerCollection, Type type) {
 		ArrayList<PlayerDisplay> arrayList = new ArrayList<>();
@@ -60,7 +60,6 @@ public class PlayerDisplay extends javax.swing.JPanel {
 
 	public PlayerDisplay(Player player, int position, Type type) {
 		initComponents();
-//		this.player = player;
 		this.setBackground(GameColors.BLUE);
 		this.setBorder(javax.swing.BorderFactory.createLineBorder(GameColors.BLACK, 8));
 		if (player == null) {
@@ -68,6 +67,11 @@ public class PlayerDisplay extends javax.swing.JPanel {
 			nameLabel.setForeground(GameColors.FONT_TITLE);
 			pingLabel.setForeground(GameColors.FONT_TITLE);
 			pointsLabel.setForeground(GameColors.FONT_TITLE);
+            
+            positionLabel.setFont(positionLabel.getFont().deriveFont(GameStyle.FONT_SIZE));
+            nameLabel.setFont(nameLabel.getFont().deriveFont(GameStyle.FONT_SIZE));
+            pingLabel.setFont(pingLabel.getFont().deriveFont(GameStyle.FONT_SIZE));
+            pointsLabel.setFont(pointsLabel.getFont().deriveFont(GameStyle.FONT_SIZE));
 
 			switch (type) {
 				case Global:

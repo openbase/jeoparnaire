@@ -4,7 +4,7 @@ package org.openbase.jeoparnaire.state;
  * #%L
  * Jeoparnaire
  * %%
- * Copyright (C) 2011 - 2017 openbase.org
+ * Copyright (C) 2011 - 2018 openbase.org
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
@@ -27,6 +27,7 @@ import org.openbase.jeoparnaire.net.command.InitVoteCommand;
 import org.openbase.jeoparnaire.net.server.ServerService;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.openbase.jeoparnaire.tools.GameSound;
 import org.openbase.jul.exception.CouldNotPerformException;
 import org.openbase.jul.exception.printer.ExceptionPrinter;
 import org.openbase.jul.exception.printer.LogLevel;
@@ -56,6 +57,9 @@ public class InitVoteState extends AbstractGameState {
         } catch (CouldNotPerformException ex) {
             ExceptionPrinter.printHistory("Could not inform all client about vote initialization", ex, LOGGER, LogLevel.WARN);
         }
+        
+        GameSound.StartVoting.play();
+        
 		try {
 			Thread.sleep(500);
 		} catch (InterruptedException ex) {
@@ -63,5 +67,4 @@ public class InitVoteState extends AbstractGameState {
 		}
 		return TaskSolving1State.class;
 	}
-	
 }

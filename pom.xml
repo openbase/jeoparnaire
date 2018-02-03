@@ -255,7 +255,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <app.mainclass.server>org.openbase.jeoparnaire.Jeoparnaire</app.mainclass.server>
         <app.mainclass.client>org.openbase.jeoparnaire.JeoparnaireClient</app.mainclass.client>
-        <dependency.jul.version>[1.4,1.5-SNAPSHOT)</dependency.jul.version>
+        <dependency.jul.version>[1.5,1.6-alpha)</dependency.jul.version>
     </properties>
     
     <dependencies>
@@ -264,6 +264,11 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.openbase</groupId>
+            <artifactId>jul.audio</artifactId>
+            <version>${dependency.jul.version}</version>
         </dependency>
         <dependency>
             <groupId>org.openbase</groupId>

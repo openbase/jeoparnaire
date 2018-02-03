@@ -4,7 +4,7 @@ package org.openbase.jeoparnaire.view.server;
  * #%L
  * Jeoparnaire
  * %%
- * Copyright (C) 2011 - 2017 openbase.org
+ * Copyright (C) 2011 - 2018 openbase.org
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
@@ -25,6 +25,7 @@ package org.openbase.jeoparnaire.view.server;
 import org.openbase.jeoparnaire.data.Quest;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import org.openbase.jeoparnaire.view.GameStyle;
 
 /**
  *
@@ -53,6 +54,7 @@ public class QuestPanel extends javax.swing.JPanel implements PropertyChangeList
 		this.initDynamicComponents();
 		this.jButton1.setText(Integer.toString(quest.getPoints()));
 		this.quest.addPropertyChangeListener(this);
+        jButton1.setFont(jButton1.getFont().deriveFont(GameStyle.FONT_SIZE));
 	}
 
 	/**
