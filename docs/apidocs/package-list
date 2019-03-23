@@ -1,0 +1,13 @@
+org.openbase.jeoparnaire
+org.openbase.jeoparnaire.config
+org.openbase.jeoparnaire.controller
+org.openbase.jeoparnaire.data
+org.openbase.jeoparnaire.jp
+org.openbase.jeoparnaire.net.client
+org.openbase.jeoparnaire.net.command
+org.openbase.jeoparnaire.net.server
+org.openbase.jeoparnaire.state
+org.openbase.jeoparnaire.tools
+org.openbase.jeoparnaire.view
+org.openbase.jeoparnaire.view.client
+org.openbase.jeoparnaire.view.server

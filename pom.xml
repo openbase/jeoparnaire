@@ -255,7 +255,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <app.mainclass.server>org.openbase.jeoparnaire.Jeoparnaire</app.mainclass.server>
         <app.mainclass.client>org.openbase.jeoparnaire.JeoparnaireClient</app.mainclass.client>
-        <dependency.jul.version>[1.4,1.5-SNAPSHOT)</dependency.jul.version>
+        <dependency.jul.version>[1.6,1.7-alpha)</dependency.jul.version>
     </properties>
     
     <dependencies>
