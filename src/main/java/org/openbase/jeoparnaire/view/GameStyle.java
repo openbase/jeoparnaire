@@ -28,5 +28,5 @@ package org.openbase.jeoparnaire.view;
  */
 public class GameStyle {
 
-    public static final float FONT_SIZE = 40;
+    public static final float FONT_SIZE = 38;
 }

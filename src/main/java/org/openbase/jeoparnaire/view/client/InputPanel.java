@@ -165,7 +165,7 @@ public class InputPanel extends javax.swing.JPanel {
         playerLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         playerLabel1.setText("Server");
 
-        hostTextField.setText("Jeopardy");
+        hostTextField.setText("Jeoparnaire");
         hostTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 hostTextFieldActionPerformed(evt);
