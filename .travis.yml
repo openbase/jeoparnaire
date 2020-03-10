@@ -1,5 +1,7 @@
 language: java
 
+os: linux
+
 dist: xenial
 
 jdk:
@@ -7,14 +9,10 @@ jdk:
   - openjdk8
   - openjdk-ea
 
-matrix:
-  allow_failures:
-  - jdk: openjdk8
-  - jdk: openjdk-ea
-
-cache:
-  directories:
-  - $HOME/.m2
+# cache disabled since it cause many issues where artifacts are not correctly updated.
+#cache:
+#  directories:
+#  - $HOME/.m2
 
 install:
   - mvn --settings .travis/settings.xml install -DskipTests=true -Dmaven.javadoc.skip=true --batch-mode --update-snapshots --show-version --quiet
@@ -30,11 +28,6 @@ notifications:
     email:
         on_success: never
         on_failure: never
-    slack:
-        on_failure: change
-        on_success: change
-        rooms:
-            - openbase-org:vGz7LO4CvGoGMneYkEm3ON7E#build
 stages:
   - compile
   - test
@@ -43,6 +36,9 @@ stages:
   - trigger
 
 jobs:
+  allow_failures:
+    - jdk: openjdk8
+    - jdk: openjdk-ea
   include:
     - &compile
       stage: compile
@@ -66,13 +62,13 @@ jobs:
       deploy:
       - provider: script
         script: .travis/deploy.sh
-        skip_cleanup: true
+        cleanup: false
         on:
             repo: ${REPO_ID}
             branch: master
       - provider: script
         script: .travis/deploy.sh
-        skip_cleanup: true
+        cleanup: false
         on:
             repo: ${REPO_ID}
             tags: true

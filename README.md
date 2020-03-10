@@ -63,8 +63,8 @@ Perfect for birthday and christmas parties, anniversary celebrations or just for
 
 ## Requirements
 
-A Java Runtime Environment (JRE) is needed on the server and on each client machine:
-* http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
+A Java 11 (or higher) Runtime Environment (JRE) is required on the server and on each client machine:
+* https://jp.azul.com/downloads/zulu-community/?&version=java-11-lts&architecture=x86-64-bit&package=jre
 
 ## Installation
 
@@ -73,7 +73,7 @@ A Java Runtime Environment (JRE) is needed on the server and on each client mach
    * server: https://github.com/openbase/jeoparnaire/releases/download/v1.0.0/jeoparnaire-1.0.0.jar
    * client: https://github.com/openbase/jeoparnaire/releases/download/v1.0.0/jeoparnaire-client-1.0.0.jar
 3. Create a new `JeoparnaireResource` folder within the game folder and place here all images and videos you want to use for the game.
-4. Download the game configuration template and store thoses in the `JeoparnaireResource` folder as well:
+4. Download the game configuration template and store it in the `JeoparnaireResource` folder as well:
    * https://raw.githubusercontent.com/openbase/jeoparnaire/master/src/main/resources/JeoparnaireGameConfig.xml
      * Download via link menu -> "Save link as..."
 

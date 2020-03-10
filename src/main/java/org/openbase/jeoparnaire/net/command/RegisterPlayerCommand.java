@@ -4,7 +4,7 @@ package org.openbase.jeoparnaire.net.command;
  * #%L
  * Jeoparnaire
  * %%
- * Copyright (C) 2011 - 2019 openbase.org
+ * Copyright (C) 2011 - 2020 openbase.org
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
@@ -22,7 +22,7 @@ package org.openbase.jeoparnaire.net.command;
  * #L%
  */
 
-import org.openbase.jul.extension.tcp.execution.command.AbstractCommand;
+import org.openbase.jul.communication.tcp.execution.command.AbstractCommand;
 
 /**
  *

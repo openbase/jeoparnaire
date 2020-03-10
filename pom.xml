@@ -54,7 +54,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
+                <version>3.8.1</version>
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
@@ -63,7 +63,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>appassembler-maven-plugin</artifactId>
-                <version>2.0.0</version>
+                <version>2.1.0</version>
                 <executions>
                     <execution>
                         <phase>install</phase>
@@ -107,7 +107,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>3.2.2</version>
                 <executions>
                     <execution>
                         <id>build-first</id>
@@ -188,7 +188,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
-                        <version>3.0.1</version>
+                        <version>3.2.1</version>
                         <executions>
                             <execution>
                                 <id>attach-sources</id>
@@ -251,11 +251,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <skipTests>false</skipTests>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <app.mainclass.server>org.openbase.jeoparnaire.Jeoparnaire</app.mainclass.server>
         <app.mainclass.client>org.openbase.jeoparnaire.JeoparnaireClient</app.mainclass.client>
-        <dependency.jul.version>[2.0,2.1-alpha)</dependency.jul.version>
+        <dependency.jul.version>2.0-SNAPSHOT</dependency.jul.version>
     </properties>
     
     <dependencies>
@@ -277,12 +277,12 @@
         </dependency>
         <dependency>
             <groupId>org.openbase</groupId>
-            <artifactId>jul.extension.xml</artifactId>
+            <artifactId>jul.processing.xml</artifactId>
             <version>${dependency.jul.version}</version>
         </dependency>
         <dependency>
             <groupId>org.openbase</groupId>
-            <artifactId>jul.extension.tcp</artifactId>
+            <artifactId>jul.communication.tcp</artifactId>
             <version>${dependency.jul.version}</version>
         </dependency>
         <dependency>

@@ -4,7 +4,7 @@ package org.openbase.jeoparnaire.net.client;
  * #%L
  * Jeoparnaire
  * %%
- * Copyright (C) 2011 - 2019 openbase.org
+ * Copyright (C) 2011 - 2020 openbase.org
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
@@ -30,11 +30,11 @@ import org.openbase.jeoparnaire.net.command.RegisterPlayerCommand;
 import org.openbase.jeoparnaire.net.server.ServerService;
 import org.openbase.jul.exception.CouldNotPerformException;
 import org.openbase.jul.exception.printer.ExceptionPrinter;
-import org.openbase.jul.extension.tcp.datatype.Message;
-import org.openbase.jul.extension.tcp.TCPServerConnection;
-import org.openbase.jul.extension.tcp.execution.command.AbstractCommand;
-import org.openbase.jul.extension.tcp.execution.command.ByeCommand;
-import org.openbase.jul.extension.tcp.execution.command.server.UserMessageCommand;
+import org.openbase.jul.communication.tcp.datatype.Message;
+import org.openbase.jul.communication.tcp.TCPServerConnection;
+import org.openbase.jul.communication.tcp.execution.command.AbstractCommand;
+import org.openbase.jul.communication.tcp.execution.command.ByeCommand;
+import org.openbase.jul.communication.tcp.execution.command.server.UserMessageCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

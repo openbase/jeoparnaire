@@ -4,7 +4,7 @@ package org.openbase.jeoparnaire.config;
  * #%L
  * Jeoparnaire
  * %%
- * Copyright (C) 2011 - 2019 openbase.org
+ * Copyright (C) 2011 - 2020 openbase.org
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
@@ -29,7 +29,7 @@ import nu.xom.ParsingException;
 import org.openbase.jeoparnaire.jp.JPGameConfig;
 import org.openbase.jps.core.JPService;
 import org.openbase.jps.exception.JPServiceException;
-import org.openbase.jul.extension.xml.processing.XMLProcessor;
+import org.openbase.jul.processing.xml.processing.XMLProcessor;
 
 /**
  *
