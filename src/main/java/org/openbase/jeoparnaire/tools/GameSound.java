@@ -33,16 +33,6 @@ import org.openbase.jul.exception.printer.ExceptionPrinter;
  */
 public enum GameSound {
 
-    /*
-	 * - Agent explodier
-	 * - Muttaschiff explodiert
-	 * - Laser
-	 * - Mine Legen
-	 * - Marker setzen
-	 * - Hilferuf
-	 * - (tanken)
-	 * - Unterstützen
-	 * Resource abliefern	 */
     RightVote("sound/right-vote.wav"),
     WrongVote("sound/wrong-vote.wav"),
     StartVoting("sound/start-voting.wav");

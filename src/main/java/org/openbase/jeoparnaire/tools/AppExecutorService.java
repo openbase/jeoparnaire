@@ -61,7 +61,7 @@ public class AppExecutorService {
 				}
 			}
 		} catch (Exception ex) {
-			ExceptionPrinter.printHistory("State extecution failed!", ex, LOGGER);
+			ExceptionPrinter.printHistory("State execution failed!", ex, LOGGER);
 		}
 	}
 }
