@@ -251,11 +251,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <skipTests>false</skipTests>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <app.mainclass.server>org.openbase.jeoparnaire.Jeoparnaire</app.mainclass.server>
         <app.mainclass.client>org.openbase.jeoparnaire.JeoparnaireClient</app.mainclass.client>
-        <dependency.jul.version>2.0-SNAPSHOT</dependency.jul.version>
+        <dependency.jul.version>3.2-SNAPSHOT</dependency.jul.version>
     </properties>
     
     <dependencies>
@@ -316,4 +316,3 @@
     </distributionManagement>
 
 </project>
-
