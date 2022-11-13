@@ -77,16 +77,17 @@ public class Voting {
         Player player;
         for (long delay : winner.keySet()) {
             player = winner.get(delay);
-            points = (int) (activeQuest.getPoints() - (activeQuest.getPoints() * i * 0.3));
-            player.addPoints(Math.max((int) (activeQuest.getPoints() * 0.1), points), delay);
+            points = (int) (activeQuest.getPoints() - (activeQuest.getPoints() * i * 0.01));
+            player.addPoints(Math.max((int) (activeQuest.getPoints() * 0.5), points), delay);
             ++i;
-            if (i > 9) {
-                break;
-            }
         }
+
+        i = 0;
         for (long delay : loser.keySet()) {
             player = loser.get(delay);
-            player.addPoints((int) -(activeQuest.getPoints() * 0.25), delay);
+            points = (int)  ((activeQuest.getPoints() - i * 100) * 0.05);
+            player.addPoints(-Math.max(0, points), delay);
+            ++i;
         }
     }
 
