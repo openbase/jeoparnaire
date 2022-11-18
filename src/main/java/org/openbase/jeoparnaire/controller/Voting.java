@@ -1,3 +1,4 @@
+
 package org.openbase.jeoparnaire.controller;
 
 /*-
@@ -140,6 +141,10 @@ public class Voting {
         });
 
         Collections.reverse(playerList);
+        for (int i = 0; i < playerList.size(); i++) {
+            Player player = playerList.get(i);
+            System.out.println(player.getName()+", "+player.getPoints());
+        }
         return Collections.unmodifiableCollection(playerList);
     }
 
