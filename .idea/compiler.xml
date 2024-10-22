@@ -9,8 +9,5 @@
         <module name="jeoparnaire" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="jeoparnaire" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
